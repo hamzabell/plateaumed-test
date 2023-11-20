@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    .btn {
+        @apply w-full rounded-[6px] h-[44px] flex justify-center items-center text-[1rem] font-semibold;
+    }
+
+    .btn-primary {
+        @apply bg-[#121212] text-white;
+    }
+
+    .btn-secondary {
+        @apply border border-[#7D8398] text-[#121212]
+    }
+
+    .app-input {
+        @apply w-full h-14 rounded-lg bg-[#fcfcfc] text-[#121212] text-[1rem] font-normal pl-4 border;
+    }
+
+    .app-input-label {
+        @apply font-medium text-[14px] text-[#121212];
+    }
+
+    .app-input-layout {
+        @apply flex flex-col gap-y-1;
+    }
+
+    .app-input-error {
+        @apply text-red-700 text-[12px] font-normal;
+    }
+
+    .error {
+        @apply border border-red-700;
+    }
+}
+
+table {
+    thead {
+        th {
+            &:first-child {
+                padding-left: 16px;
+            }
+        }
+    }
+
+    tr {
+        td {
+            &:first-child {
+                padding-left: 16px;
+            }
+        }
+    }
+}

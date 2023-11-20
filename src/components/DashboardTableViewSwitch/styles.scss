@@ -1,0 +1,28 @@
+.table-switch {
+
+    label {
+        position: relative;
+    }
+
+    input[type='radio']:checked {
+
+        & + label  {
+            accent-color: green;
+            color: #121212 !important;
+        }
+
+        & + label::after {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            bottom: -16px;
+            right: 0;
+            background-color: #121212;
+        }
+    }
+
+
+
+}
